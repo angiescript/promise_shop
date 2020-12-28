@@ -1,6 +1,6 @@
 const promise = new Promise((resolve, reject) => {
+    reject(new Error("I DID NOT FIRE!"));
     resolve("I FIRED!");
-    reject(new Error("I DID NOT FIRE!"))
 });
 
 function onReject(error){
